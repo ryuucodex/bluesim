@@ -373,6 +373,9 @@
                         <input type="password" id="login-password" placeholder="Masukkan password">
                     </div>
                     <button class="btn btn-primary" onclick="handleLogin()" style="margin-top: 8px;">Masuk</button>
+                    <p style="text-align:center; font-size:13px; margin-top: 16px;">
+                        Belum punya akun? <span style="color: var(--theme-color); font-weight: 700; cursor: pointer;" onclick="switchAuthMode('register')">Daftar sekarang</span>
+                    </p>
                 </div>
 
                 <div id="form-register" style="display: none;">
@@ -389,10 +392,12 @@
                         <input type="password" id="reg-password" placeholder="Minimal 4 karakter">
                     </div>
                     <button class="btn btn-primary" onclick="handleRegister()" style="margin-top: 8px;">Daftar</button>
+                    <p style="text-align:center; font-size:13px; margin-top: 16px;">
+                        Sudah punya akun? <span style="color: var(--theme-color); font-weight: 700; cursor: pointer;" onclick="switchAuthMode('login')">Masuk di sini</span>
+                    </p>
                 </div>
             </div>
-            <p style="text-align:center; font-size:11px; opacity:0.6; margin-bottom: 4px;">Jika tidak punya akun. silahkan daftar terlebih dahulu</p>
-            <p style="text-align:center; font-size:11px; opacity:0.6;">Data dan privasi terenkripsi secara end to end</p>
+            <p style="text-align:center; font-size:11px; opacity:0.6; margin-top: 12px;">Data dan privasi terenkripsi secara end to end</p>
         </div>
     </div>
 
